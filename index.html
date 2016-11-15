@@ -12,12 +12,149 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <title>Réservation Billets Louvre</title>
+<style type="text/css">
 
+    @font-face {
+    font-family: 'bonvenocflight';
+    src: url('web fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.eot');
+    src: url('web fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('web fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.woff') format('woff'),
+         url('web fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.ttf') format('truetype'),
+         url('web fonts/bonvenocf_light_macroman/BonvenoCF-Light-webfont.svg#bonvenocflight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+  @font-face {
+    font-family: 'black_jackregular';
+    src: url('web fonts/blackjack_regular_macroman/blackjack-webfont.eot');
+    src: url('web fonts/blackjack_regular_macroman/blackjack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('web fonts/blackjack_regular_macroman/blackjack-webfont.woff2') format('woff2'),
+         url('web fonts/blackjack_regular_macroman/blackjack-webfont.woff') format('woff'),
+         url('web fonts/blackjack_regular_macroman/blackjack-webfont.ttf') format('truetype'),
+         url('web fonts/blackjack_regular_macroman/blackjack-webfont.svg#black_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+
+}
+
+/*header*/
+
+       .navbar
+  {
+    background: rgb(38,38,38);
+    border-radius: 0px 0px 0px 0PX;
+    
+
+  }
+
+
+  .navbar-header .navbar-brand
+  {
+    display: flex;
+    flex-direction: row;
+
+      margin-bottom:10px;
+      padding-left: 20px;
+      font-size: 1.8em;
+      font-family: 'bonvenocflight',sans-serif;
+      color: rgb(228, 181, 112);
+
+  }
+
+  #reserv
+  {
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+
+     #dep
+   {
+    margin-top: 5px;
+   }
+
+  .navbar-brand img
+  {
+    width: 90px;
+    height: 60px;
+    margin-top: -10px;
+  }
+
+  .menu
+  {
+    margin-right: 20px;
+    padding-top: 5px;
+  }
+    
+  .menu ul li a
+  {
+
+    font-size: 1.2em;
+    font-family: verdana;
+    color: rgb(81, 81, 80);
+  }
+
+    .menu ul li a:hover
+  {
+    background: rgb(228, 181, 112);
+    color: black;
+        -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+  }
+
+  .dropdown-menu
+  {
+    background: rgb(38,38,38);
+  }
+
+
+  .icon-bar
+  {
+    margin-top: 10px;
+    background: rgb(228, 181, 112);
+  }
+  </style>
    
 </head>
 
 	<body>
+    <header>
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"> <img src="logo_pyramide_accueil.png"><div id="reserv">Réservation<br/><div id="dep">Musée du Louvre</div></div></a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="menu">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html"><i class="fa fa-home"></i> Accueil</a></li>
+        <li class="dropdown"> 
+            <a class="passion" data-toggle="dropdown" href="#"><i class="fa fa-info"></i> Informations pratiques<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-clock-o"></i> Horaires</a></li>
+              <li><a href="#"><i class="fa fa-money"></i> Tarifs</a></li>
+              <li><a href="#"><i class="fa fa-calendar"></i> Ouverture des salles</a></li>
+            </ul>
+          </li>
+        <li><a href="#experience"><i class="fa fa-shopping-cart"></i> Billeterie</a></li>
+            
+      </ul>
+    </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  </header>
 	
 	</body>
 
